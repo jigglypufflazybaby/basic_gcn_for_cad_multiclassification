@@ -1,0 +1,19 @@
+project_new/
+├── README.md
+├── LICENSE
+├── requirements.txt
+├── Dockerfile
+├── config.py
+├── dataset.py
+├── model.py
+├── train.py
+├── test.py
+├── utils.py
+├── notebooks/
+│   └── exploratory.ipynb
+├── data/
+│   ├── raw/           # Place your raw CAD graph files here (e.g., pickled files)
+│   └── processed/     # (Optional) Processed data files
+└── runs/
+    ├── checkpoints/   # Saved model checkpoints
+    └── logs/          # TensorBoard logs and experiment logs

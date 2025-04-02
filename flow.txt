@@ -1,0 +1,43 @@
+[1. Raw CAD Data in JSON]
+          │
+          ▼
+[2. Data Preprocessing]
+  - Read JSON files from data/raw/
+  - Extract node features ("x"), connectivity ("edge_index"), and labels ("y")
+  - Convert JSON data into PyTorch Geometric Data objects
+  - Save processed data (data.pt) in data/processed/
+          │
+          ▼
+[3. Dataset Loader]
+  - CADGraphJSONDataset (in dataset.py) loads processed data
+  - Provides a standardized interface for the DataLoader
+          │
+          ▼
+[4. Model Architecture (model.py)]
+  - Input: Node features and graph connectivity
+  - Several GCNConv layers perform message passing:
+      • Aggregate neighbor features
+      • Learn context-aware node embeddings
+  - MLP Classifier Head:
+      • Processes node embeddings
+      • Outputs multi-label predictions (via sigmoid activation)
+          │
+          ▼
+[5. Training (train.py)]
+  - Split dataset into training and test sets
+  - Use DataLoader to create mini-batches
+  - Forward pass through the GNN
+  - Compute Binary Cross-Entropy Loss for multi-label classification
+  - Backpropagation and parameter updates (using Adam)
+  - Save checkpoints and logs under runs/
+          │
+          ▼
+[6. Testing/Evaluation (test.py)]
+  - Load trained model from checkpoints
+  - Evaluate performance on the test dataset
+  - Compute metrics (e.g., exact-match accuracy, F1-score)
+          │
+          ▼
+[7. Utilities & Experimentation]
+  - utils.py: Functions for checkpoint management, plotting loss curves, etc.
+  - notebooks/: Jupyter notebooks for exploratory data analysis and further diagnostics
