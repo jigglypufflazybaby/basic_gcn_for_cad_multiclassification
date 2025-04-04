@@ -1,0 +1,92 @@
+{
+    "nodes": [
+        {
+            "id": 0,
+            "type": "chamfer",
+            "params": {
+                "size": 3.867061962440122
+            }
+        },
+        {
+            "id": 1,
+            "type": "extrude",
+            "params": {
+                "size": 9.631234646160287
+            }
+        },
+        {
+            "id": 2,
+            "type": "cut",
+            "params": {
+                "size": 4.84856422810428
+            }
+        },
+        {
+            "id": 3,
+            "type": "cut",
+            "params": {
+                "size": 1.5045083610119545
+            }
+        },
+        {
+            "id": 4,
+            "type": "cut",
+            "params": {
+                "size": 5.220527996895228
+            }
+        },
+        {
+            "id": 5,
+            "type": "chamfer",
+            "params": {
+                "size": 2.954625487040527
+            }
+        },
+        {
+            "id": 6,
+            "type": "fillet",
+            "params": {
+                "size": 3.291233352478302
+            }
+        },
+        {
+            "id": 7,
+            "type": "fillet",
+            "params": {
+                "size": 8.700862631639207
+            }
+        }
+    ],
+    "edges": [
+        {
+            "from": 2,
+            "to": 14,
+            "relation": "dependency"
+        },
+        {
+            "from": 4,
+            "to": 7,
+            "relation": "dependency"
+        },
+        {
+            "from": 0,
+            "to": 14,
+            "relation": "dependency"
+        },
+        {
+            "from": 3,
+            "to": 10,
+            "relation": "dependency"
+        },
+        {
+            "from": 4,
+            "to": 10,
+            "relation": "dependency"
+        },
+        {
+            "from": 4,
+            "to": 12,
+            "relation": "dependency"
+        }
+    ]
+}

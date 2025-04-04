@@ -1,0 +1,110 @@
+{
+    "nodes": [
+        {
+            "id": 0,
+            "type": "chamfer",
+            "params": {
+                "size": 9.148565644171784
+            }
+        },
+        {
+            "id": 1,
+            "type": "fillet",
+            "params": {
+                "size": 8.934930346145702
+            }
+        },
+        {
+            "id": 2,
+            "type": "chamfer",
+            "params": {
+                "size": 8.438852864781765
+            }
+        },
+        {
+            "id": 3,
+            "type": "fillet",
+            "params": {
+                "size": 4.5352577699755825
+            }
+        },
+        {
+            "id": 4,
+            "type": "extrude",
+            "params": {
+                "size": 8.742965835058921
+            }
+        },
+        {
+            "id": 5,
+            "type": "cut",
+            "params": {
+                "size": 1.683771303099984
+            }
+        },
+        {
+            "id": 6,
+            "type": "chamfer",
+            "params": {
+                "size": 3.7178454239535745
+            }
+        },
+        {
+            "id": 7,
+            "type": "extrude",
+            "params": {
+                "size": 4.388060479643039
+            }
+        },
+        {
+            "id": 8,
+            "type": "fillet",
+            "params": {
+                "size": 7.251295379775832
+            }
+        },
+        {
+            "id": 9,
+            "type": "cut",
+            "params": {
+                "size": 6.344992593556448
+            }
+        },
+        {
+            "id": 10,
+            "type": "extrude",
+            "params": {
+                "size": 6.2953154873875965
+            }
+        },
+        {
+            "id": 11,
+            "type": "cut",
+            "params": {
+                "size": 6.9329330953283135
+            }
+        }
+    ],
+    "edges": [
+        {
+            "from": 4,
+            "to": 8,
+            "relation": "dependency"
+        },
+        {
+            "from": 2,
+            "to": 12,
+            "relation": "dependency"
+        },
+        {
+            "from": 0,
+            "to": 11,
+            "relation": "dependency"
+        },
+        {
+            "from": 0,
+            "to": 9,
+            "relation": "dependency"
+        }
+    ]
+}

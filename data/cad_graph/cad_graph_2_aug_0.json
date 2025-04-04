@@ -1,0 +1,67 @@
+{
+  "nodes": [
+    {
+      "id": -0.00698900946179364,
+      "type": "chamfer",
+      "params": {
+        "size": 8.720161076618712
+      }
+    },
+    {
+      "id": 1.020777918547553,
+      "type": "extrude",
+      "params": {
+        "size": 5.765149788328081
+      }
+    },
+    {
+      "id": 2.069934458259414,
+      "type": "cut",
+      "params": {
+        "size": 5.433096364788982
+      }
+    },
+    {
+      "id": 2.977086985374498,
+      "type": "fillet",
+      "params": {
+        "size": 2.0433011093219515
+      }
+    },
+    {
+      "id": 4.133196287887558,
+      "type": "chamfer",
+      "params": {
+        "size": 8.482011851379994
+      }
+    },
+    {
+      "id": 5.069516359221863,
+      "type": "fillet",
+      "params": {
+        "size": 1.3849616795129598
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": 4,
+      "to": 7,
+      "relation": "dependency"
+    },
+    [
+      1,
+      2
+    ],
+    {
+      "from": 2,
+      "to": 8,
+      "relation": "dependency"
+    },
+    {
+      "from": 0,
+      "to": 13,
+      "relation": "dependency"
+    }
+  ]
+}

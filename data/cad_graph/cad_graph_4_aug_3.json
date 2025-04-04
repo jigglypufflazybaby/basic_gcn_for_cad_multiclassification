@@ -1,0 +1,80 @@
+{
+  "nodes": [
+    {
+      "id": -0.22362175811283025,
+      "type": "chamfer",
+      "params": {
+        "size": 3.035566859334895
+      }
+    },
+    {
+      "id": 1.0052151912581444,
+      "type": "fillet",
+      "params": {
+        "size": 3.365535336981808
+      }
+    },
+    {
+      "id": 2.009348786283186,
+      "type": "fillet",
+      "params": {
+        "size": 7.119451458615677
+      }
+    },
+    {
+      "id": 2.972957781197605,
+      "type": "cut",
+      "params": {
+        "size": 9.505486780778272
+      }
+    },
+    {
+      "id": 3.8479022613070972,
+      "type": "fillet",
+      "params": {
+        "size": 2.5897210964978314
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": 3,
+      "to": 9,
+      "relation": "dependency"
+    },
+    {
+      "from": 4,
+      "to": 11,
+      "relation": "dependency"
+    },
+    {
+      "from": 0,
+      "to": 5,
+      "relation": "dependency"
+    },
+    {
+      "from": 1,
+      "to": 7,
+      "relation": "dependency"
+    },
+    [
+      4,
+      1
+    ],
+    {
+      "from": 3,
+      "to": 11,
+      "relation": "dependency"
+    },
+    {
+      "from": 4,
+      "to": 13,
+      "relation": "dependency"
+    },
+    {
+      "from": 3,
+      "to": 8,
+      "relation": "dependency"
+    }
+  ]
+}
